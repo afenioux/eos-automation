@@ -49,7 +49,7 @@ passwd:
 Type configuration session name: bgp
 
  - - - - - -
- Proceeding with device : evo-1.rt
+ Proceeding with device : router1
 Model and version are: DCS-7280SR-48C6-F - 4.20.8M-INT
 
 --- system:/running-config
