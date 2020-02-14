@@ -4,6 +4,20 @@ Theses are some basic scripts I use for automation.
 The username should be provide in agument while the password will be requested by the prompt
 
 
+## Config
+First make sur you have enabled the http/https API (there is a lot of documentation and examples if you connect with your web browser on your router's IP) :
+
+```
+management api http-commands
+  protocol http
+  vrf default
+   ip access-group ACL-API-IN in
+   ipv6 access-group ACL6-API-IN in
+   exit
+  no shutdown
+exit
+```
+
 ## sw_list.yml
 the list of switches/routers you want to connect to
 
