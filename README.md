@@ -39,7 +39,7 @@ Model and version are: DCS-7280SR2A-48YC6-F - 4.20.8M-INT
 ```
 ./cli_run.py <username>
 passwd:
-Type your full command (eg: 'show running-config | include ecmp'): show running-config | include bgp
+Type your command : show run | include bgp
  Proceeding with device : router1
 Model and version are: DCS-7280SR-48C6-F - 4.20.8M-INT
 router bgp 65535
