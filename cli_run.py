@@ -13,7 +13,7 @@ from jsonrpclib import Server
 
 login = sys.argv[1]
 pwd=getpass.getpass("passwd:")
-command = raw_input("Type your full command (eg: 'show running-config | include ecmp'): ")
+command = raw_input("Type your command : ")
 #command = 'show ip access-lists'
 
 
@@ -28,6 +28,6 @@ for host in devices:
 	response = switch.runCmds( 1, [ "show version" ], 'json' ) 
 	print "Model and version are: {} - {}".format( response[0][ "modelName" ],response[0][ "version" ])
 
-	response = switch.runCmds( 1, [command], 'text')
+	response = switch.runCmds( version=1, cmds=[command], format='text', autoComplete=True )
 	print response[0]['output']
 
